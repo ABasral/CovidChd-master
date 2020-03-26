@@ -23,6 +23,7 @@ public class adminDesk extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private DatabaseReference myref;
+    private ProgressBar progressBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +32,7 @@ public class adminDesk extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerViewNotices);
         recyclerView.setHasFixedSize(true);
 
+        progressBar = (ProgressBar) findViewById(R.id.progress);
 
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(adminDesk.this);
         mLayoutManager.setReverseLayout(true);
@@ -54,6 +56,7 @@ public class adminDesk extends AppCompatActivity {
         };
 
         recyclerView.setAdapter(recyclerAdapter);
+        progressBar.setVisibility(View.GONE);
 
     }
 
