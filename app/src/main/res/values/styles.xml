@@ -1,0 +1,21 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Medium" >
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Small" >
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.DarkActionBar.TitleTextStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">8sp</item>
+    </style>
+</resources>

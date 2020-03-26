@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Awareness">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backbut1"
+            android:layout_marginTop="20dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/back_arrow"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-55dp"
+            android:layout_marginLeft="35dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Corona Virus Awareness"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+            android:padding="10dp"
+        android:background="@drawable/lower_rect"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/coronavirus"
+            android:layout_marginTop="10dp"
+            />
+        <com.uncopt.android.widget.text.justify.JustifiedTextView
+            android:background="@drawable/border"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:gravity="fill_horizontal"
+            android:layout_gravity="center_vertical|end"
+            android:justificationMode="inter_word"
+            android:padding="20dp"
+            android:textColor="@color/pink"
+            android:id="@+id/coronadata"
+            android:text="\u2022\t\tCorona viruses (CoV) are a large family of Viruses that causes a wide range of illness from the common cold to more severe diseases viz., Middle East Respiratory Syndrome [MERS] and Severe Acute Respiratory Syndrome [SARS].
+\n\n\n\u2022\t\tCOVID-19 is the infectious disease caused by the most recently discovered coronavirus. This new virus and disease were unknown before the outbreak began in Wuhan, China, in December 2019."
+            android:textStyle="bold"
+            />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/coronaposter"
+                android:id="@+id/poster1"
+                android:layout_below="@+id/coronadata"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:id="@+id/poster2"
+                android:src="@drawable/coronaposter2"
+                android:layout_below="@+id/poster1"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="530dp"
+                android:id="@+id/poster3"
+                android:src="@drawable/coronaposter3"
+                android:layout_below="@+id/poster2"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@+id/poster3"
+                android:src="@drawable/coronasym"
+                />
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/border"-->
+                <!--android:layout_margin="20dp"-->
+                <!--android:textSize="15dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:gravity="fill_horizontal"-->
+                <!--android:layout_gravity="center_vertical|end"-->
+                <!--android:justificationMode="inter_word"-->
+                <!--android:padding="20dp"-->
+                <!--android:textIsSelectable="true"-->
+                <!--android:linksClickable="true"-->
+                <!--android:textColor="@color/pink"-->
+                <!--android:text="References:-->
+    <!--\n1.\thttps://www.mohfw.gov.in/-->
+    <!--\n2.\thttps://www.latimes.com/entertainment-arts/story/2020-03-18/your-coronavirus-quarantine-entertainment-guide-->
+    <!--\n3.\thttp://chandigarh.gov.in/-->
+    <!--\n4.\tCovid-19 Containment Measures Action Plan, District Emergency Centre, Bhuj, Collector Office, Kutch, Gujarat-->
+    <!--\n5.\thttp://chandigarh.gov.in/health_covid19.htm"/>-->
+    </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

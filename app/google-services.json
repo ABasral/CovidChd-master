@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "816135904829",
+    "firebase_url": "https://covachandigarh.firebaseio.com",
+    "project_id": "covachandigarh",
+    "storage_bucket": "covachandigarh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816135904829:android:7fa86f5237caf51608d454",
+        "android_client_info": {
+          "package_name": "in.gov.chandigarh.covidchd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816135904829-2pf13m43anand91o6tla9rg3nklqjsol.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.gov.chandigarh.covidchd",
+            "certificate_hash": "a28fbc21eab2ec255a601952f95a85e0a95dc577"
+          }
+        },
+        {
+          "client_id": "816135904829-ivdudn2jdod9ejosme5tua64ui34kvgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA73tdioUqxEm12x97028ljYDR-31gyXH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816135904829-ivdudn2jdod9ejosme5tua64ui34kvgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:816135904829:android:59ecc970100c958a08d454",
+        "android_client_info": {
+          "package_name": "org.zapto.zukayu.www.covachandigarh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "816135904829-pt558qf2k04146e27hrc1pqobfgrq1bq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.zapto.zukayu.www.covachandigarh",
+            "certificate_hash": "a28fbc21eab2ec255a601952f95a85e0a95dc577"
+          }
+        },
+        {
+          "client_id": "816135904829-ddub2u8p1mgdau1japlnj6au79kfi90p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.zapto.zukayu.www.covachandigarh",
+            "certificate_hash": "76c3f1eef8b5e1c7139afff0fb71bc3ad6822d51"
+          }
+        },
+        {
+          "client_id": "816135904829-ivdudn2jdod9ejosme5tua64ui34kvgn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA73tdioUqxEm12x97028ljYDR-31gyXH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "816135904829-ivdudn2jdod9ejosme5tua64ui34kvgn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

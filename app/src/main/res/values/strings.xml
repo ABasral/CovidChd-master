@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Chd Fights Corona</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="tagline"><font color='#ffffff'>कोरोना : </font><font color='#ff7676'>को</font>ई <font color='#ff7676'>रो</font>ड पर <font color='#ff7676'>ना</font> निकले</string>
+
+    <string-array name="sectors">
+        <item>Sector 36</item>
+        <item>Sector 35</item>
+        <item>Sector 43</item>
+    </string-array>
+</resources>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Symptoms"
+    android:background="@drawable/grad2"
+    android:paddingTop="20dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ll"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:text="Coronavirus Check List : \n\nSelect which are applicable"
+                    android:fontFamily="monospace"
+                    android:textStyle="bold"
+
+                    />
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:background="@drawable/grad3"-->
+                    <!--android:orientation="horizontal"-->
+                    <!---->
+                    <!--android:weightSum="2"-->
+                    <!--&gt;-->
+                    <!---->
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.25"-->
+                        <!--android:text="Difficulty in Breathing"-->
+                        <!--android:fontFamily="monospace"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/colorPrimaryDark"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--/>-->
+                    <!--<CheckBox-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:buttonTint="@color/colorPrimaryDark"-->
+                        <!--android:layout_weight="1.75"-->
+                        <!--android:id="@+id/breathing"-->
+                        <!--android:onClick="onCheckboxClicked"-->
+                        <!--&gt;-->
+
+                    <!--</CheckBox>-->
+                    <!---->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:background="@drawable/grad3"-->
+                    <!--android:orientation="horizontal"-->
+
+                    <!--android:weightSum="2"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.25"-->
+                        <!--android:text="Severe Chest Pain"-->
+                        <!--android:fontFamily="monospace"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/colorPrimaryDark"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--/>-->
+                    <!--<CheckBox-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:buttonTint="@color/colorPrimaryDark"-->
+                        <!--android:layout_weight="1.75"-->
+                        <!--android:id="@+id/chestpain"-->
+                        <!--android:onClick="onCheckboxClicked"-->
+                        <!--&gt;-->
+
+                    <!--</CheckBox>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:background="@drawable/grad3"-->
+                    <!--android:orientation="horizontal"-->
+
+                    <!--android:weightSum="2"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.25"-->
+                        <!--android:text="Losing consciousness"-->
+                        <!--android:fontFamily="monospace"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/colorPrimaryDark"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--/>-->
+                    <!--<CheckBox-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:buttonTint="@color/colorPrimaryDark"-->
+                        <!--android:layout_weight="1.75"-->
+                        <!--android:id="@+id/consciousness"-->
+                        <!--android:onClick="onCheckboxClicked"-->
+                        <!--&gt;-->
+
+                    <!--</CheckBox>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:background="@drawable/grad3"-->
+                    <!--android:orientation="horizontal"-->
+
+                    <!--android:weightSum="2"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.25"-->
+                        <!--android:text="Fever or Dry Cough"-->
+                        <!--android:fontFamily="monospace"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/colorPrimaryDark"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--/>-->
+                    <!--<CheckBox-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:buttonTint="@color/colorPrimaryDark"-->
+                        <!--android:layout_weight="1.75"-->
+                        <!--android:onClick="onCheckboxClicked"-->
+                        <!--android:id="@+id/fever"-->
+                        <!--&gt;-->
+
+                    <!--</CheckBox>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:background="@drawable/grad3"-->
+                    <!--android:orientation="horizontal"-->
+
+                    <!--android:weightSum="2"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.25"-->
+                        <!--android:text="sneezing"-->
+                        <!--android:fontFamily="monospace"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/colorPrimaryDark"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--/>-->
+                    <!--<CheckBox-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:buttonTint="@color/colorPrimaryDark"-->
+                        <!--android:layout_weight="1.75"-->
+                        <!--android:id="@+id/sneezing"-->
+                        <!--android:onClick="onCheckboxClicked"-->
+                        <!--&gt;-->
+
+                    <!--</CheckBox>-->
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:background="@drawable/grad3"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="2"-->
+                    <!--&gt;-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="0.25"-->
+
+                        <!--android:text="Traveled to Covid Affected Nation"-->
+                        <!--android:fontFamily="monospace"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/colorPrimaryDark"-->
+                        <!--android:layout_marginLeft="20dp"-->
+                        <!--/>-->
+                    <!--<CheckBox-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="50dp"-->
+                        <!--android:buttonTint="@color/colorPrimaryDark"-->
+                        <!--android:layout_weight="1.75"-->
+                        <!--android:id="@+id/travel"-->
+                        <!--android:onClick="onCheckboxClicked"-->
+                        <!--&gt;-->
+
+                    <!--</CheckBox>-->
+
+                <!--</LinearLayout>-->
+=
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:layout_marginTop="6dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:text="Difficulty in\nBreathing"
+                            android:background="@drawable/grad5"
+                            android:onClick="onCheckboxClicked"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:id="@+id/breathing"
+                            android:fontFamily="monospace"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_marginRight="3dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:text="Severe\nChest Pain"
+                            android:background="@drawable/grad5"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="10dp"
+                            android:id="@+id/chestpain"
+                            android:onClick="onCheckboxClicked"
+                            android:layout_marginLeft="3dp"
+                            android:fontFamily="monospace"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:layout_marginTop="6dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:text="Losing\nConsciousness\n"
+                            android:background="@drawable/grad5"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:id="@+id/consi"
+                            android:fontFamily="monospace"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:onClick="onCheckboxClicked"
+                            android:textAlignment="center"
+                            android:layout_marginRight="3dp"
+                            />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:text="Fever"
+                            android:background="@drawable/grad5"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:id="@+id/fever"
+                            android:fontFamily="monospace"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+
+                            android:onClick="onCheckboxClicked"
+                            android:gravity="center_horizontal"
+                            android:layout_marginRight="3dp"
+                            />
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="100dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="Lossing Conscious "-->
+                            <!--android:background="@drawable/grad3"-->
+                            <!--android:id="@+id/consi"-->
+                            <!--android:gravity="center_horizontal|center_vertical"-->
+                            <!--android:padding="10dp"-->
+                            <!--android:layout_marginLeft="3dp"-->
+                            <!--android:onClick="onCheckboxClicked"-->
+                            <!--android:fontFamily="monospace"-->
+                            <!--android:textColor="@color/colorPrimaryDark"-->
+                            <!--android:textStyle="bold"-->
+                            <!--/>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="100dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:text="High \nFever"-->
+                            <!--android:background="@drawable/grad3"-->
+                            <!--android:id="@+id/fever"-->
+                            <!--android:gravity="center_horizontal|center_vertical"-->
+                            <!--android:padding="20dp"-->
+                            <!--android:layout_marginLeft="3dp"-->
+                            <!--android:onClick="onCheckboxClicked"-->
+                            <!--android:fontFamily="monospace"-->
+                            <!--android:textColor="@color/colorPrimaryDark"-->
+                            <!--android:textStyle="bold"-->
+                            <!--/>-->
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:layout_marginTop="6dp"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:text="Dry Cough"
+                            android:background="@drawable/grad5"
+                            android:padding="10dp"
+                            android:textSize="15dp"
+                            android:id="@+id/cough"
+                            android:onClick="onCheckboxClicked"
+                            android:fontFamily="monospace"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_marginRight="3dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_weight="1"
+                            android:text="Sneezing"
+                            android:background="@drawable/grad5"
+                            android:id="@+id/sneez"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="10dp"
+                            android:layout_marginLeft="3dp"
+                            android:onClick="onCheckboxClicked"
+                            android:fontFamily="monospace"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:layout_marginTop="6dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/travel"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grad5"
+                            android:fontFamily="monospace"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:onClick="onCheckboxClicked"
+                            android:padding="10dp"
+                            android:text="Travel History to Covid-19 affected Country in last 14 days"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+                        android:layout_marginTop="6dp"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:text="Contact with any person who has recent travel history to Covid-19 affected Country"
+                            android:id="@+id/contactPerson"
+                            android:background="@drawable/grad5"
+                            android:padding="10dp"
+                            android:textSize="14.5dp"
+                            android:fontFamily="monospace"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:onClick="onCheckboxClicked"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:layout_marginRight="3dp"
+                            />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:layout_width="100dp"
+                        android:layout_margin="10dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/checksymptoms"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:alpha="0.7"
+        android:textAlignment="center"
+        android:layout_below="@+id/ll"
+        android:textColor="@color/white"
+        android:id="@+id/thriveWeb"
+        android:text="Check List Reference\n https://covid19.thrive.health/"
+        android:fontFamily="monospace"
+        android:layout_alignParentBottom="true"
+        android:textStyle="bold"
+
+        />
+
+</RelativeLayout>
